@@ -1,5 +1,3 @@
-
-
 # API Manajemen Artikel
 
 Proyek ini adalah API untuk mengelola artikel.
