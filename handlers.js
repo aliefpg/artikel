@@ -1,5 +1,5 @@
 let users = [
-    { username: 'admin', password: 'admin123', isAdmin: true }
+    { username: '<YOUR_USERNAME>', password: '<YOUR_PASSWORD>', isAdmin: true }
 ];
 
 const login = (currentUser) => async (request, h) => {
