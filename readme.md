@@ -5,6 +5,8 @@ Proyek ini adalah API untuk mengelola artikel.
 ## Fitur yang Tersedia
 
 - **Login**: Autentikasi admin untuk mengakses fitur-fitur API.
+- **getAllArticles**: Mengambil semua artikel.
+- **getArticleById**: Mengambil artikel berdasarkan ID.
 
 ## Setup
 
@@ -57,4 +59,14 @@ Proyek ini menggunakan dependensi berikut:
 	       }
 		}
     
+### getAllArticles
 
+- **URL**: `/articles`
+- **Metode**: `GET`
+- **Headers**: Tidak diperlukan
+
+###getArticleById
+
+- **URL**: `/articles/{id}`
+- **Metode**: `GET`
+- **Headers**: Tidak diperlukan

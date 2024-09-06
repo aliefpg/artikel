@@ -15,5 +15,5 @@ module.exports = (currentUser) => [
         method: 'GET',
         path: '/articles/{id}',
         handler: handlers.getArticleById
-    },
+    }
 ];

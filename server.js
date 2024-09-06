@@ -9,7 +9,6 @@ const init = async () => {
 
     let currentUser = { value: null };
 
-    // Register routes
     server.route(routes(currentUser));
 
     await server.start();

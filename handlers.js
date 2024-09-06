@@ -23,7 +23,17 @@ const getAllArticles = (request, h) => {
     return h.response(articles).code(200);
 };
 
+const getArticleById = (request, h) => {
+    const { id } = request.params;
+    const article = articles.find(a => a.id === id);
+    if (!article) {
+        return h.response({ error: 'Article not found' }).code(404);
+    }
+    return h.response(article).code(200);
+};
+
 module.exports = {
     login,
-    getAllArticles
+    getAllArticles,
+    getArticleById
 };
