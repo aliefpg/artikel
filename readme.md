@@ -12,7 +12,7 @@ Proyek ini adalah API untuk mengelola artikel.
 
    Clone repository ini ke mesin lokal Anda:
    ```
-   git clone <URL_REPOSITORY>
+   git clone https://github.com/aliefpg/artikel.git
 
 2.  **Install Dependencies**
 
@@ -23,14 +23,14 @@ Proyek ini adalah API untuk mengelola artikel.
 
     > npm start` 
     
-    Server akan berjalan di `http://localhost:3000` (atau port lain jika dikonfigurasi berbeda).
+    Server akan berjalan di `http://localhost:3000`
  
 ## Dependensi
 
 Proyek ini menggunakan dependensi berikut:
 
--   **[@hapi/hapi](https://hapi.dev/)**: `^21.3.10` - Framework server untuk Node.js.
--   **[nodemon](https://nodemon.io/)**: `^3.1.4` - Alat untuk otomatisasi restart server saat file diubah.
+-   **[@hapi/hapi](https://hapi.dev/)**: `^21.3.10`
+-   **[nodemon](https://nodemon.io/)**: `^3.1.4`
 
 
 ## Endpoints API
