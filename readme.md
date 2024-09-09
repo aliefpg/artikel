@@ -4,9 +4,10 @@ Proyek ini adalah API untuk mengelola artikel.
 
 ## Fitur yang Tersedia
 
-- **Login**: Autentikasi admin untuk mengakses fitur-fitur API.
-- **getAllArticles**: Mengambil semua artikel.
-- **getArticleById**: Mengambil artikel berdasarkan ID.
+- [x] **Login**: Autentikasi admin untuk mengakses fitur-fitur API.
+- [x] **getAllArticles**: Mengambil semua artikel.
+- [x] **getArticleById**: Mengambil artikel berdasarkan ID.
+- [x] **addArticle**: Menambah artikel baru.
 
 ## Setup
 
@@ -19,7 +20,8 @@ Proyek ini adalah API untuk mengelola artikel.
 2.  **Install Dependencies**
 
     >cd artikel api
-    >npm install` 
+	>
+    >npm install 
 
 3.  **Menjalankan Server**
 
@@ -46,7 +48,7 @@ Proyek ini menggunakan dependensi berikut:
     	{
 	      "username": "<YOUR_USERNAME>",
 	      "password": "<YOUR_PASSWORD>"
-		}` 
+		} 
 
 - **Response**
 		
@@ -65,8 +67,20 @@ Proyek ini menggunakan dependensi berikut:
 - **Metode**: `GET`
 - **Headers**: Tidak diperlukan
 
-###getArticleById
+### getArticleById
 
 - **URL**: `/articles/{id}`
 - **Metode**: `GET`
 - **Headers**: Tidak diperlukan
+
+### addArticle
+
+-  **URL**: `/articles`
+-  **Metode**: `POST`
+-  **Body**:
+
+		{
+		"title": "Judul Artikel",
+		"content": "Konten Artikel"
+		}
+

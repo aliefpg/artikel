@@ -32,8 +32,22 @@ const getArticleById = (request, h) => {
     return h.response(article).code(200);
 };
 
+const addArticle = (currentUser) => async (request, h) => {
+    if (currentUser.value && currentUser.value.isAdmin) {
+        const { title, author, content } = request.payload;
+
+        const id = `article-${articles.length + 1}`;
+        const newArticle = { id, title, author, content };
+        articles.push(newArticle);
+        return h.response(newArticle).code(201);
+    } else {
+        return h.response({ error: 'Unauthorized' }).code(403);
+    }
+};
+
 module.exports = {
     login,
     getAllArticles,
-    getArticleById
+    getArticleById,
+    addArticle
 };
