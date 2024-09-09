@@ -8,6 +8,8 @@ Proyek ini adalah API untuk mengelola artikel.
 - [x] **getAllArticles**: Mengambil semua artikel.
 - [x] **getArticleById**: Mengambil artikel berdasarkan ID.
 - [x] **addArticle**: Menambah artikel baru.
+- [ ] **updateArticle**: Memperbarui artikel yang ada.
+- [ ] **deleteArticle**: Menghapus artikel berdasarkan ID.
 
 ## Setup
 
