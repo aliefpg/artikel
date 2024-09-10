@@ -20,5 +20,10 @@ module.exports = (currentUser) => [
         method: 'POST',
         path: '/articles',
         handler: handlers.addArticle(currentUser)
+    },
+    {
+        method: 'PUT',
+        path: '/articles/{id}',
+        handler: handlers.updateArticle(currentUser)
     }
 ];

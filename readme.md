@@ -86,3 +86,14 @@ Proyek ini menggunakan dependensi berikut:
 		"content": "Konten Artikel"
 		}
 
+### updateArticle
+
+-   **URL**: `/articles/{id}`
+-   **Metode**: `PUT`
+-   **Headers**: Tidak diperlukan
+-   **Response**
+
+		{
+	      "title": "Judul Artikel Baru", 
+	      "content": "Konten Artikel Baru"
+		}
