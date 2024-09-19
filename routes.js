@@ -25,5 +25,10 @@ module.exports = (currentUser) => [
         method: 'PUT',
         path: '/articles/{id}',
         handler: handlers.updateArticle(currentUser)
+    },
+    {
+        method: 'DELETE',
+        path: '/articles/{id}',
+        handler: handlers.deleteArticle(currentUser)
     }
 ];

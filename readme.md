@@ -8,8 +8,8 @@ Proyek ini adalah API untuk mengelola artikel.
 - [x] **getAllArticles**: Mengambil semua artikel.
 - [x] **getArticleById**: Mengambil artikel berdasarkan ID.
 - [x] **addArticle**: Menambah artikel baru.
-- [ ] **updateArticle**: Memperbarui artikel yang ada.
-- [ ] **deleteArticle**: Menghapus artikel berdasarkan ID.
+- [x] **updateArticle**: Memperbarui artikel yang ada.
+- [x] **deleteArticle**: Menghapus artikel berdasarkan ID.
 
 ## Setup
 
@@ -97,3 +97,9 @@ Proyek ini menggunakan dependensi berikut:
 	      "title": "Judul Artikel Baru", 
 	      "content": "Konten Artikel Baru"
 		}
+
+### deleteArticles
+
+- **URL**: `/articles/{id}`
+- **Metode**: `DELETE`
+- **Headers**: Tidak diperlukan

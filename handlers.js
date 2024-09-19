@@ -61,11 +61,26 @@ const updateArticle = (currentUser) => async (request, h) => {
         return h.response({ error: 'Unauthorized' }).code(403);
     }
 };
+const deleteArticle = (currentUser) => async (request, h) => {
+    if (currentUser.value && currentUser.value.isAdmin) {
+        const { id } = request.params;
+        const index = articles.findIndex(a => a.id === id);
+        if (index === -1) {
+            return h.response({ error: 'Article not found' }).code(404);
+        }
+
+        articles.splice(index, 1);
+        return h.response({ message: 'Article deleted' }).code(200);
+    } else {
+        return h.response({ error: 'Unauthorized' }).code(403);
+    }
+};
 
 module.exports = {
     login,
     getAllArticles,
     getArticleById,
     addArticle,
-    updateArticle
+    updateArticle,
+    deleteArticle
 };
